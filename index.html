@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validar Usuario y Clave </title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script >
+		function comprobarClave(){
+clave1=document.f1.clave1.value
+clave2=document.f1.clave2.evalue
+
+if (clave1 =="admin" && Clave2 =="conejo"){
+
+	alert("Los Datos Coinciden...\n Bienvenido");
+	var href="/bachi/html/index.html";
+	window.location=href;
+}
+else{
+	alert("Error ...\n Intentelo nuevamente.");
+	var href="/bachi/html/index.html"; 
+	window.location=href; 
+};
+
+}
+		
+</script>
+</head>
+<body background="cyan">
+	<h1>validar contraseña y password  </h1>
+	<br>
+	<h1>Presionar botón de confirmar</h1>
+	<br>
+	<form action=""  name= "f1">
+		<center>
+
+		Usuario:<input type="password" name="clave1" size="20">
+		<br>
+	    Contraseña:<input type="password" name="clave2" size="20">
+		<br>
+		<input type="button" value="Ingresar" onclick="comprobarClave()">
+	</center>
+  <hr color="blue"  >
+
+	</form>
+
+</body>
+</html>
